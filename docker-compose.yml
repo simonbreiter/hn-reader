@@ -1,0 +1,7 @@
+hn-reader:
+  container_name: hn-reader
+  image: php:5.6-apache
+  ports:
+    - 8020:80
+  volumes:
+    - ./web/:/var/www/html/
