@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>hn-reader</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
     <link rel="apple-touch-icon" sizes="120x120" href="img/touch-icon-iphone-retina.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/touch-icon-ipad-retina.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
