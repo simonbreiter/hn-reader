@@ -36,6 +36,7 @@
             margin: 0 0 .5rem 0;
         }
         .masonry {
+            max-height: 90vh;
             -webkit-column-count: 4;
             -moz-column-count: 4;
             column-count: 4;
@@ -69,9 +70,23 @@
             -webkit-column-break-inside: avoid;
             page-break-inside: avoid;
             break-inside: avoid;
-            background-color: #fff;
+            background-color: white;
             padding: 1rem;
             margin: 1rem .5rem;
+            border-bottom: 2px solid #dfdfdf;
+        }
+        article.intro {
+            background-color: DarkOrange;
+            border-bottom: 2px solid #dd7a01;
+        }
+        
+        .intro h1 {
+            font-size: 2rem;
+        }
+        .intro h1,
+        .intro p,
+        .intro a {
+            color: white;
         }
     </style>
 </head>
@@ -86,6 +101,10 @@ $entries = $xml->xpath("//item");
 ?>
 
     <div class="masonry">
+    <article class="intro">
+        <h1>News</h1>
+        <p>Feed from <a href="https://news.ycombinator.com/news">Hacker News</a></p>
+    </article>
     <?php foreach ($entries as $entry): ?>
         <article>
             <h1><a href="<?= $entry->link ?>"><?= $entry->title ?></a></h1>
