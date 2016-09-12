@@ -17,7 +17,7 @@
             font-family: Lato;
             color: #3d3d3d;
             background-color: #efefef;
-            padding: 0.5rem;
+            padding: .5rem;
             line-height: 1.4;
         }
         a {
@@ -47,21 +47,21 @@
             -moz-column-gap: 0;
             column-gap: 0;
         }
-        @media (max-width: 1200px) {
+        @media screen and (max-width: 1200px) {
             .masonry {
                 -webkit-column-count: 3;
                 -moz-column-count: 3;
                 column-count: 3;
             }
         }
-        @media (max-width: 1000px) {
+        @media screen and (max-width: 1000px) {
             .masonry {
                 -webkit-column-count: 2;
                 -moz-column-count: 2;
                 column-count: 2;
             }
         }
-        @media (max-width: 600px) {
+        @media screen and (max-width: 600px) {
             .masonry {
                 -webkit-column-count: 1;
                 -moz-column-count: 1;
@@ -77,6 +77,11 @@
             padding: 1rem;
             margin: 1rem .5rem;
             border-bottom: 2px solid #dfdfdf;
+        }
+        @media screen and (max-width: 600px) {
+            .masonry article {
+                margin: 0 0 .5rem 0;
+            }
         }
         article.intro {
             background-color: DarkOrange;
