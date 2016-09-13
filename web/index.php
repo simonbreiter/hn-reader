@@ -66,6 +66,7 @@
                 -webkit-column-count: 1;
                 -moz-column-count: 1;
                 column-count: 1;
+                max-height: initial;
             }
         }
         .masonry article {
