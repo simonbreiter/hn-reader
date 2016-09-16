@@ -17,8 +17,13 @@
             font-family: Lato;
             color: #3d3d3d;
             background-color: #efefef;
-            padding: .5rem;
+            padding: 1rem .5rem;
             line-height: 1.4;
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                padding: .5rem;
+            }
         }
         a {
             text-decoration: none;
@@ -85,6 +90,7 @@
             }
         }
         article.intro {
+            margin-top: 0;
             background-color: DarkOrange;
             border-bottom: 2px solid #dd7a01;
         }
