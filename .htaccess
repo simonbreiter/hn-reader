@@ -1,0 +1,21 @@
+<IfModule mod_headers.c>
+# Don't allow any pages to be framed - Defends against CSRF
+Header set X-Frame-Options DENY
+# Turn on IE8-IE9 XSS prevention tools
+Header set X-XSS-Protection "1; mode=block"
+# prevent mime based attacks
+Header set X-Content-Type-Options "nosniff"
+# Strict-Transport-Security
+Header set Strict-Transport-Security "max-age=63072000; includeSubdomains;"
+
+# Content-Security-Policy
+Header unset Content-Security-Policy
+Header add Content-Security-Policy "default-src 'self'"
+Header unset X-Content-Security-Policy
+Header add X-Content-Security-Policy "default-src 'self'"
+Header unset X-WebKit-CSP
+Header add X-WebKit-CSP "default-src 'self'"
+
+# Fun
+Header set X-Powered-By "Coffee"
+</IfModule>
