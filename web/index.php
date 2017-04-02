@@ -51,6 +51,9 @@
             -webkit-column-gap: 0;
             -moz-column-gap: 0;
             column-gap: 0;
+            position: absolute;
+            right: 5rem;
+            left: .5rem;
         }
         @media screen and (max-width: 1200px) {
             .masonry {
@@ -72,6 +75,9 @@
                 -moz-column-count: 1;
                 column-count: 1;
                 max-height: initial;
+                position: initial;
+                right: unset;
+                left: unset;
             }
         }
         .masonry article {
